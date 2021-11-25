@@ -100,3 +100,71 @@ nav ul li a {
     text-decoration: none;
     color: azure;
 }
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    background: none;
+    text-align: center;
+    position: fixed;
+    right: 25px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img {
+    width: 25px;
+    margin-top: 10px;
+
+}
+#feature {
+    background-color: #07080a;
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text {
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.title-text p {
+    margin-left: 0px;
+    font-size: 20px;
+    color: azure;
+
+
+}
+
+.title-text h1 {
+
+    font-size: 30px;
+    color: azure;
+}
+
+.feature-box {
+    width: 90%;
+    margin: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.feature {
+    flex-basis: 50%;
+    color: azure;
+    font-size: 10px;
+
+}
+
+.feature-img {
+    flex-basis: 50%;
+    margin: unset;
+}
+
+.feature-img img {
+    width: 90%;
+
+}
