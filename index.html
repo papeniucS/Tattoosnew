@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
 <body>
@@ -128,6 +128,48 @@
             </div>
         </div>
     </section>
+    <section id="about">
+        <div class="title-text">
+            <p>About Us</p>
+            <h1>How We Can Help You?</h1>
+        </div>
+        <div class="about-row">
+            <div class="about-col">
+                <p>Our task is to help people who want a tattoo but do not know where and how to do it, for this we
+                    provide our services with a database of many masters from your city and not only.</p>
+            </div>
+            <div class="about-col">
+                <p>We make the search for good tattoo artists many times easier and more convenient, we select according
+                    to the price category and quality for you personally without any payment.</p>
+            </div>
+            <div class="about-col">
+                <p>To do this, you just need to register on the site and make an account for a user or an account for a
+                    tattoo artist if you are like that, then we will do everything for you.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-160px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-160px") {
+                sideNav.style.right = "0px";
+                menu.src = "images/img4.png";
+            }
+            else {
+                sideNav.style.right = "-160px";
+                menu.src = "images/img3.png";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+            speedAsDuration: true
+        });
+    </script>
 </body>
 
 </html>

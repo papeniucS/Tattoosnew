@@ -245,3 +245,37 @@ hr {
     bottom: 40%;
     opacity: 1;
 }
+#about {
+    width: 100%;
+    padding: 70px 0;
+    background-color: #0e1014;
+}
+
+.about-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-col {
+    margin-top: 40px;
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px 3px #1a1e25;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.about-col p {
+    font-size: 14px;
+    color: azure;
+}
+
+.about-col:hover {
+    transform: translateY(7px);
+}
